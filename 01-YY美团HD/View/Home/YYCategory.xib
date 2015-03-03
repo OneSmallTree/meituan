@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="YYCategoryController">
+            <connections>
+                <outlet property="leftTable" destination="UDW-xw-mTb" id="IPN-5N-RGd"/>
+                <outlet property="rightTable" destination="xCq-yG-Wgh" id="cmK-JA-lio"/>
+                <outlet property="view" destination="SZ9-LI-JQi" id="Y0o-Qe-KTK"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="SZ9-LI-JQi">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="UDW-xw-mTb" userLabel="左边">
+                    <rect key="frame" x="0.0" y="0.0" width="300" height="600"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="lHf-8f-rtd"/>
+                        <outlet property="delegate" destination="-1" id="10c-zA-9kw"/>
+                    </connections>
+                </tableView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="xCq-yG-Wgh" userLabel="右边">
+                    <rect key="frame" x="300" y="0.0" width="300" height="600"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="L5U-lu-YCS"/>
+                        <outlet property="delegate" destination="-1" id="2pw-xs-Dm7"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="UDW-xw-mTb" firstAttribute="top" secondItem="SZ9-LI-JQi" secondAttribute="top" id="13D-Sv-yXQ"/>
+                <constraint firstAttribute="bottom" secondItem="UDW-xw-mTb" secondAttribute="bottom" id="DiV-Uf-821"/>
+                <constraint firstAttribute="bottom" secondItem="xCq-yG-Wgh" secondAttribute="bottom" id="Og6-Dh-MBW"/>
+                <constraint firstItem="xCq-yG-Wgh" firstAttribute="top" secondItem="SZ9-LI-JQi" secondAttribute="top" id="RR1-lT-r5g"/>
+                <constraint firstItem="xCq-yG-Wgh" firstAttribute="leading" secondItem="UDW-xw-mTb" secondAttribute="trailing" id="Yeo-zp-jG9"/>
+                <constraint firstItem="UDW-xw-mTb" firstAttribute="leading" secondItem="SZ9-LI-JQi" secondAttribute="leading" id="ex6-Bj-t8d"/>
+                <constraint firstItem="xCq-yG-Wgh" firstAttribute="leading" secondItem="UDW-xw-mTb" secondAttribute="trailing" id="n0x-T0-b8s"/>
+                <constraint firstAttribute="trailing" secondItem="xCq-yG-Wgh" secondAttribute="trailing" id="rCL-Ov-Nxp"/>
+                <constraint firstItem="UDW-xw-mTb" firstAttribute="width" secondItem="xCq-yG-Wgh" secondAttribute="width" id="xRh-Jp-tua"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,23 @@
+//
+//  PrefixHeader.pch
+//  01-YY美团HD
+//
+//  Created by 阳颜 on 15/2/4.
+//  Copyright (c) 2015年 yangyan. All rights reserved.
+//
+
+#ifndef _1_YY__HD_PrefixHeader_pch
+#define _1_YY__HD_PrefixHeader_pch
+ 
+
+#define YYColor(r,g,b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1];
+
+#define YYRandomColor YYColor(arc4random_uniform(255),arc4random_uniform(255),arc4random_uniform(255));
+
+#import "YYConst.h"
+
+#define YYNoteCenter [NSNotificationCenter defaultCenter]
+
+#import "YYSingle.h"
+
+#endif
